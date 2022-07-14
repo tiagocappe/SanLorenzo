@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #3C9DC6; 
+    background-color: #862A37;
+    font-family: 'Inconsolata', monospace;
+
+}
+h2 {
+    color: #862A37;
+    background-color: #3C9DC6;
+    font-family: 'Roboto', sans-serif;
+}
+.img--small {
+    width: 50px;
+    height: 50px;
+}
+/* HEADER INDEX */
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #3C9DC6 ;
+}
+.header__section {
+    display: flex;
+}
+.header__item {
+    display: inline;
+    padding: 20px;
+}
+.header__item a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* MAIN INDEX */
+/* primera parte */
+.main__titulo {
+    display: flex;
+    justify-content: center;
+}
+.main__texto {
+    display: flex;
+    justify-content: center;
+}
+/* segunda parte CONTENIDO */
+.main__contenido {
+
+    display: grid;
+    grid-template-areas:"escudo camisetatitular camisetasuplente"
+                        "escudo camisetatitular camisetasuplente";
+}
+.main__escudo {
+    grid-area: escudo;
+}
+.main__camisetatitular {
+    grid-area: camisetatitular;
+}
+.main__camisetasuplente {
+    grid-area: camisetasuplente;
+}
+.main__img--small {
+    background-color: red;
+    width: 300px;
+    margin: 30px;
+    padding: 30px;
+}
+.main__img--medium {
+    width: 500px;
+    margin: 30px;
+
+}
+.main__img {
+    display: flex;
+    flex-direction: center;
+}
+.main__section {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main__texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+}
+
+/* FOOTER INDEX */
+footer {
+    height: 500px;
+    padding-top: 300px;
+}
+.footer__section {
+    background-color: #862A37;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footer__icono {
+    width: 70px;
+    height: 70px;
+    margin: 12px; 
+}
+.footer__texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+/* MEDIA QUERIE CELULAR */
+@media (min-width:320px ) and (max-width:575px){
+/* NAVEGACION */
+header {
+    height: auto;
+}
+/* MAIN */
+
+.main__contenido {
+
+    .main__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    .main__texto {
+        display: flex;
+        justify-content: center;
+    }
+    .main__contenido {
+    
+        display: grid;
+        grid-template-areas:"escudo"
+                            "camisetatitular"
+                            "camisetasuplente"
+                            "escudo"
+                            "camisetatitular"
+                            "camisetasuplente";
+    }
+    .main__escudo {
+        grid-area: escudo;
+    }
+    .main__camisetatitular {
+        grid-area: camisetatitular;
+    }
+    .main__camisetasuplente {
+        grid-area: camisetasuplente;
+    }
+    .main__img--small {
+        background-color: red;
+        width: 100px;
+        margin: 30px;
+        padding: 30px;
+    }
+    .main__img--medium {
+        width: 200px;
+        margin: 30px;
+    }
+    .main__section {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .main__texto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-size: cover;
+    }
+
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+    padding-top: 200px;
+}
+
+.footer__icono {
+    width: 70px;
+    height: 70px;
+    margin: 12px; 
+}
+
+}
+/* media querie de tablet */
+@media (min-width:576px) and (max-width: 992px){
+/* NAVEGACION */
+header {
+    height: auto;
+}
+/* MAIN */
+
+.main__contenido {
+
+    .main__titulo {
+        display: flex;
+        justify-content: center;
+    }
+    .main__texto {
+        display: flex;
+        justify-content: center;
+    }
+    .main__contenido {
+    
+        display: grid;
+        grid-template-areas:"escudo"
+                            "camisetatitular"
+                            "camisetasuplente"
+                            "escudo"
+                            "camisetatitular"
+                            "camisetasuplente";
+    }
+    .main__escudo {
+        grid-area: escudo;
+    }
+    .main__camisetatitular {
+        grid-area: camisetatitular;
+    }
+    .main__camisetasuplente {
+        grid-area: camisetasuplente;
+    }
+    .main__img--small {
+        background-color: red;
+        width: 300px;
+        margin: 30px;
+        padding: 30px;
+    }
+    .main__img--medium {
+        width: 400px;
+        margin: 30px;
+    }
+    .main__section {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .main__texto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-size: cover;
+    }
+
+
+/* FOOTER */
+
+footer {
+    height: 300px;
+    padding-top: 400px;
+}
+
+.footer__icono {
+    width: 30px;
+    height: 30px;
+    margin: 10px; 
+}
+
+}
