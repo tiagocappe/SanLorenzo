@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- CSS BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
@@ -16,15 +19,15 @@
         <nav><!-- barra de navegacion/menu -->
             <section class="header__section">
                 <img class="img--small" src="../resources/Escudo_del_Club_Atlético_San_Lorenzo_de_Almagro.svg.png" alt="escudosanlorenzo">
-                <ul>
-                    <li class="header__item"><a href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a href="clasicos-sanlorenzo.html">Clasicos</a></li>
-                    <li class="header__item"><a href="copas-sanlorenzo.html">Copas</a></li>
-                    <li class="header__item"><a href="historia-sanlorenzo.html">Historia</a></li>
-                    <li class="header__item"><a href="idolos-sanlorenzo.html">Idolos</a></li>
-                    <li class="header__item"><a href="#">Contacto</a></li>
-            </ul>
-        </section>
+                <ul class="header__section">
+                    <li class="header__item header__inicio"><a href="../index.html">Inicio</a></li>
+                    <li class="header__item header__clasicos"><a href="../pages/clasicos-sanlorenzo.html">Clasicos</a></li>
+                    <li class="header__item header__copas"><a href="../pages/copas-sanlorenzo.html">Copas</a></li>
+                    <li class="header__item header__historia"><a href="../pages/historia-sanlorenzo.html">Historia</a></li>
+                    <li class="header__item header__idolos"><a href="../pages/idolos-sanlorenzo.html">Idolos</a></li>
+                    <li class="header__item header__contacto"><a href="#">Contacto</a></li>
+                </ul>
+            </section>
         </nav>
     </header>
     <main>
@@ -50,18 +53,13 @@
     <footer><!-- Pie de pagina -->
         <section class="footer__section">
             <article class="footer__redes ">
-                <img class="footer__icono" src="../resources/instragram icono.png" alt="logoinstagram">
-                <p class="">@sanlorenzo</p>
-            </article>
-            <article class="footer__redes ">
-                <img class="footer__icono" src="../resources/facebook icono.png" alt="logofacebook">
-                <p>@SanLorenzo</p>
-            </article>
-            <article class="footer__redes ">
-                <img class="footer__icono" src="../resources/twitter-logo-4.png" alt="logotwitter">
-                <p>@SanLorenzo</p>
+                <img class="footer__icono footer__instagram" src="../resources/instragram icono.png" alt="logoinstagram">
+                <img class="footer__icono footer__facebook" src="../resources/facebook icono.png" alt="logofacebook">
+                <img class="footer__icono footer__twitter" src="../resources/twitter-logo-4.png" alt="logotwitter">
             </article>
         </section>
     </footer>
+    <!-- Javascrip -->    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,13 +11,20 @@ h1 {
 }
 h2 {
     color: #862A37;
-    background-color: #3C9DC6;
     font-family: 'Roboto', sans-serif;
+
 }
+
+body {
+    text-align: center;
+}
+
 .img--small {
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
+
+
 /* HEADER INDEX */
 header {
     position: sticky;
@@ -25,7 +32,29 @@ header {
     background-color: #3C9DC6 ;
 }
 .header__section {
-    display: flex;
+    display: grid;
+    grid-template-areas: "logo inicio clasicos copas historia idolos contacto";
+}
+.header__logo {
+    grid-area: logo;
+}
+.header__inicio {
+    grid-area: inicio;
+}
+.header__clasicos {
+    grid-area: clasicos;
+}
+.header__copas{
+    grid-area: copas
+}
+.header__historia {
+    grid-area: historia;
+}
+.header__idolos {
+    grid-area: idolos;
+}
+.header__contacto {
+    grid-area: contacto;
 }
 .header__item {
     display: inline;
@@ -40,72 +69,104 @@ ul {
     padding: 0;
 }
 
+
+
 /* MAIN INDEX */
-/* primera parte */
+.main__principal {
+    display:grid;
+    grid-template-areas:"titulo"
+                        "texto";
+}
 .main__titulo {
-    display: flex;
-    justify-content: center;
+    grid-area: titulo;
 }
 .main__texto {
-    display: flex;
-    justify-content: center;
+    grid-area: texto;
 }
-/* segunda parte CONTENIDO */
-.main__contenido {
-
+.main__article {
     display: grid;
-    grid-template-areas:"escudo camisetatitular camisetasuplente"
-                        "escudo camisetatitular camisetasuplente";
+    margin: 0 auto;
+    padding: 5px;
+    grid-template-areas:"none titular"
+                        "escudo suplente"
+                        "escudo estadio"
+}
+.main__estadio {
+    grid-area: estadio;
 }
 .main__escudo {
     grid-area: escudo;
+
 }
-.main__camisetatitular {
-    grid-area: camisetatitular;
+.main__titular {
+    grid-area:titular;
+
 }
-.main__camisetasuplente {
-    grid-area: camisetasuplente;
+.main__suplente {
+    grid-area:suplente;
+
 }
 .main__img--small {
     background-color: red;
-    width: 300px;
-    margin: 30px;
+    width:300px;
     padding: 30px;
-}
-.main__img--medium {
-    width: 500px;
     margin: 30px;
-
-}
-.main__img {
-    display: flex;
-    flex-direction: center;
-}
-.main__section {
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.main__texto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-size: cover;
 }
 
-/* FOOTER INDEX */
+.main__img--medium {
+    background-color: red;
+    width:500px;
+    padding: 30px;
+    margin: 30px;
+}
+
+/* MAIN CLASICOS */
+.main__clasicos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"huracan boca river"
+                        "huracan independiente racing";
+}
+.main__huracan {
+    grid-area: huracan;
+}
+.main__boca {
+    grid-area: boca;
+}
+.main__river {
+    grid-area: river;
+}
+.main__independiente {
+    grid-area: independiente;
+}
+.main__racing {
+    grid-area: racing;
+}
+
+
+/* FOOTER */
 footer {
     height: 500px;
     padding-top: 300px;
 }
 .footer__section {
     background-color: #862A37;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    text-align: left;
 
+}
+.footer__redes {
+    display: grid;
+    grid-template-areas: "instagram facebook twitter";
+}
+.footer__instagram {
+    grid-area: instagram;
+}
+.footer__facebook {
+    grid-area: facebook;
+}
+.footer__twitter {
+    grid-area: twitter;
 }
 .footer__icono {
     width: 70px;
@@ -119,153 +180,164 @@ footer {
 }
 /* MEDIA QUERIE CELULAR */
 @media (min-width:320px ) and (max-width:575px){
-/* NAVEGACION */
+
+/* HEADER */
+
 header {
+    position:relative;
+    top: 0px;
+    background-color: #3C9DC6 ;
+}
+.header__section {
+    grid-template-areas: "logo"
+                        "inicio"
+                        "clasicos"
+                        "copas"
+                        "historia"
+                        "idolos"
+                        "contacto";
+}
+/* INDEX */
+
+/* MAIN */
+.main__article {
+    grid-template-areas:"escudo"
+                        "titular"
+                        "suplente"
+                        "estadio"
+}
+.main__img--small {
+    background-color: red;
+    width:250px;
+    padding: 30px;
+    margin: 30px;
+}
+.main__img--medium {
+    background-color: red;
+    width:300px;
+    padding: 30px;
+    margin: 30px;
+}
+.main__titulo {
+    grid-area: titulo;
+    width: auto;
     height: auto;
 }
-/* MAIN */
-
-.main__contenido {
-
-    .main__titulo {
-        display: flex;
-        justify-content: center;
-    }
-    .main__texto {
-        display: flex;
-        justify-content: center;
-    }
-    .main__contenido {
-    
-        display: grid;
-        grid-template-areas:"escudo"
-                            "camisetatitular"
-                            "camisetasuplente"
-                            "escudo"
-                            "camisetatitular"
-                            "camisetasuplente";
-    }
-    .main__escudo {
-        grid-area: escudo;
-    }
-    .main__camisetatitular {
-        grid-area: camisetatitular;
-    }
-    .main__camisetasuplente {
-        grid-area: camisetasuplente;
-    }
-    .main__img--small {
-        background-color: red;
-        width: 100px;
-        margin: 30px;
-        padding: 30px;
-    }
-    .main__img--medium {
-        width: 200px;
-        margin: 30px;
-    }
-    .main__section {
-        padding: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-    }
-    .main__texto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-size: cover;
-    }
-
-
-/* FOOTER */
-
-footer {
-    height: 200px;
-    padding-top: 200px;
-}
-
-.footer__icono {
-    width: 70px;
-    height: 70px;
-    margin: 12px; 
-}
-
-}
-/* media querie de tablet */
-@media (min-width:576px) and (max-width: 992px){
-/* NAVEGACION */
-header {
+.main__texto {
+    grid-area: texto;
+    width: auto;
     height: auto;
 }
-/* MAIN */
 
-.main__contenido {
-
-    .main__titulo {
-        display: flex;
-        justify-content: center;
-    }
-    .main__texto {
-        display: flex;
-        justify-content: center;
-    }
-    .main__contenido {
-    
-        display: grid;
-        grid-template-areas:"escudo"
-                            "camisetatitular"
-                            "camisetasuplente"
-                            "escudo"
-                            "camisetatitular"
-                            "camisetasuplente";
-    }
-    .main__escudo {
-        grid-area: escudo;
-    }
-    .main__camisetatitular {
-        grid-area: camisetatitular;
-    }
-    .main__camisetasuplente {
-        grid-area: camisetasuplente;
-    }
-    .main__img--small {
-        background-color: red;
-        width: 300px;
-        margin: 30px;
-        padding: 30px;
-    }
-    .main__img--medium {
-        width: 400px;
-        margin: 30px;
-    }
-    .main__section {
-        padding: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-    }
-    .main__texto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-size: cover;
-    }
-
+/* CLASICOS */
+.main__clasicos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"huracan"
+                        "boca"
+                        "river"
+                        "independiente"
+                        "racing";
+}
 
 /* FOOTER */
-
 footer {
-    height: 300px;
-    padding-top: 400px;
+    width: 100%;
+    height: 500px;
+    padding-top: 300px;
+}
+.footer__redes {
+    display: grid;
+    grid-template-areas: "instagram"
+                        "facebook" 
+                        "twitter";
 }
 
-.footer__icono {
-    width: 30px;
-    height: 30px;
-    margin: 10px; 
+
+
+/* MEDIA QUERIE TABLET */
+@media (min-width:576px) and (max: width 992px) {
+
+/* HEADER */
+
+header {
+    position:relative;
+    top: 0px;
+    background-color: #3C9DC6 ;
+}
+.header__section {
+    grid-template-areas: "logo"
+                        "inicio"
+                        "clasicos"
+                        "copas"
+                        "historia"
+                        "idolos"
+                        "contacto";
+}
+/* INDEX */
+
+/* MAIN */
+.main__article {
+    grid-template-areas:"escudo titular"
+                        "escudo suplente"
+                        "none estadio"
+}
+.main__img--small {
+    background-color: red;
+    width:250px;
+    padding: 30px;
+    margin: 30px;
+}
+.main__img--medium {
+    background-color: red;
+    width:300px;
+    padding: 30px;
+    margin: 30px;
+}
+.main__titulo {
+    grid-area: titulo;
+    width: auto;
+    height: auto;
+}
+.main__texto {
+    grid-area: texto;
+    width: auto;
+    height: auto;
 }
 
+/* CLASICOS */
+.main__clasicos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"huracan"
+                        "boca"
+                        "river"
+                        "independiente"
+                        "racing";
 }
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 500px;
+    padding-top: 300px;
+}
+.footer__redes {
+    display: grid;
+    grid-template-areas: "instagram"
+                        "facebook" 
+                        "twitter";
+}
+
+
+
+
+
+
+
+}
+
+
+
