@@ -25,6 +25,7 @@ body {
 }
 
 
+
 /* HEADER INDEX */
 header {
     position: sticky;
@@ -68,6 +69,10 @@ ul {
     list-style: none;
     padding: 0;
 }
+.header__transformacion:hover {
+    transform: scale(1.25,1.25);
+
+}
 
 
 
@@ -107,17 +112,21 @@ ul {
 
 }
 .main__img--small {
-    background-color: red;
     width:300px;
     padding: 30px;
     margin: 30px;
 }
 
 .main__img--medium {
-    background-color: red;
     width:500px;
     padding: 30px;
     margin: 30px;
+}
+.gradiente__uno {
+    background-image: linear-gradient(to top, red,white);
+}
+.gradiente__dos {
+    background-image: linear-gradient(to top, blue, white);
 }
 
 /* MAIN CLASICOS */
@@ -285,13 +294,13 @@ header {
 }
 .main__img--small {
     background-color: red;
-    width:250px;
+    width:300px;
     padding: 30px;
     margin: 30px;
 }
 .main__img--medium {
     background-color: red;
-    width:300px;
+    width:350px;
     padding: 30px;
     margin: 30px;
 }
@@ -338,6 +347,5 @@ footer {
 
 
 }
-
 
 
