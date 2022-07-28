@@ -1,0 +1,45 @@
+@import "variables";
+@import "footer";
+@import "header";
+@import "main";
+@import "mediaqueries";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: $font-principal;
+
+}
+h2 {
+    color: $color-principal;
+    font-family: $font-secundaria;
+
+}
+
+body {
+    text-align: center;
+}
+
+.img--small {
+    height: 50px;
+    width: 50px;
+}
+
+.margin--img {
+    margin: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
+

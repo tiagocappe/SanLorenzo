@@ -1,0 +1,17 @@
+
+.main {
+    &__transformacion:hover {
+        transform: scale(1.01,1.01);
+}
+
+    &__img--small {
+        width:300px;
+        padding: 30px;
+        margin: 30px;
+}
+    &__img--medium {
+        width:500px;
+        padding: 30px;
+        margin: 30px;
+}
+}

@@ -1,0 +1,33 @@
+footer {
+height: 500px;
+padding-top: 300px;
+}
+    .footer {
+        &__section {
+            background-color: $color-principal;
+            text-align: left;
+        }
+        &__redes {
+            display: grid;
+            grid-template-areas: "instagram facebook twitter";
+        }
+        &__instagram{
+            grid-area: instagram;
+        }
+        &__facebook {
+            grid-area: facebook;
+        }
+        &__twitter {
+            grid-area: twitter;
+        }
+        &__icono {
+            width: 70px;
+            height: 70px;
+            margin: 12px;
+        }
+        &__texto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }

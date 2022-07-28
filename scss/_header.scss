@@ -1,0 +1,9 @@
+/* HEADER INDEX */
+.header {
+    background-color:$color-principal ;
+        &__transformacion:hover {
+        transform: scale(1.25,1.25);
+        
+        }
+    }
+    
