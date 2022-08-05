@@ -10,6 +10,8 @@ footer {
 
 .footer__redes {
   display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "instagram facebook twitter"; }
 
 .footer__instagram {
@@ -41,15 +43,28 @@ footer {
   transform: scale(1.01, 1.01); }
 
 .main__img--small {
-  width: 300px;
-  padding: 30px;
-  margin: 30px; }
+  width: 300px; }
 
 .main__img--medium {
-  width: 500px;
+  width: 400px; }
+
+/* MAP */
+/* EACH */
+.color-twitter {
+  background-color: lightblue; }
+
+.color-facebook {
+  background-color: blue; }
+
+.color-instagram {
+  background-color: #bd0a72; }
+
+/* EXTEND */
+.margenes, .main__img--small, .main__img--medium {
   padding: 30px;
   margin: 30px; }
 
+/* MIXING */
 /* MEDIA QUERIE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   footer {

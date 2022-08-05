@@ -6,12 +6,10 @@
 
     &__img--small {
         width:300px;
-        padding: 30px;
-        margin: 30px;
+        @extend .margenes
 }
     &__img--medium {
-        width:500px;
-        padding: 30px;
-        margin: 30px;
+        width:400px;
+        @extend .margenes
 }
 }

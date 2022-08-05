@@ -1,0 +1,21 @@
+/* MAP */
+$redes: (
+    twitter: lightblue,
+    facebook: blue,
+    instagram: 	rgb(189, 10, 114)
+);
+
+/* EACH */
+@each $name, $color in $redes {
+    .color-#{$name}{
+        background-color: #{$color};
+    }
+}
+
+/* EXTEND */
+.margenes {
+    padding: 30px;
+    margin: 30px;
+}
+
+/* MIXING */
