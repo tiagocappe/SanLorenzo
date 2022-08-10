@@ -12,4 +12,17 @@
         width:400px;
         @extend .margenes
 }
+    &__padding-top {
+    padding-top: 70px;
+}
+    &__padding-topp {
+    padding-top: 90px;
+}
+    &__padding-toppp {
+        padding-top: 30px;
+    }
+}
+
+.img__paddinng--top {
+    padding-top: 60px;
 }

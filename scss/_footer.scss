@@ -8,9 +8,6 @@ padding-top: 300px;
             text-align: left;
         }
         &__redes {
-            display: grid;
-            min-height: 100vh;
-            grid-template-rows: auto 1fr auto;
             grid-template-areas: "instagram facebook twitter";
         }
         &__instagram{

@@ -9,9 +9,6 @@ footer {
   text-align: left; }
 
 .footer__redes {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
   grid-template-areas: "instagram facebook twitter"; }
 
 .footer__instagram {
@@ -48,6 +45,18 @@ footer {
 .main__img--medium {
   width: 400px; }
 
+.main__padding-top {
+  padding-top: 70px; }
+
+.main__padding-topp {
+  padding-top: 90px; }
+
+.main__padding-toppp {
+  padding-top: 30px; }
+
+.img__paddinng--top {
+  padding-top: 60px; }
+
 /* MAP */
 /* EACH */
 .color-twitter {
@@ -80,14 +89,17 @@ footer {
   padding: 0px; }
 
 h1 {
-  font-family: "Inconsolata", monospace; }
+  font-family: "Itim", cursive; }
 
 h2 {
   color: #862a37;
   font-family: "Roboto", sans-serif; }
 
 body {
-  text-align: center; }
+  text-align: center;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
 
 .img--small {
   height: 50px;
@@ -99,3 +111,13 @@ body {
 ul {
   list-style: none;
   padding: 0; }
+
+main {
+  margin: 10px;
+  padding: 10px; }
+
+.colortexto__verde {
+  color: green; }
+
+.colortexto__rojo {
+  color: red; }
