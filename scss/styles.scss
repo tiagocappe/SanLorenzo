@@ -13,7 +13,7 @@
 
 h1 {
     font-family: $font-principal;
-
+    text-align: center;
 }
 h2 {
     color: $color-principal;
@@ -21,12 +21,6 @@ h2 {
 
 }
 
-body {
-    text-align: center;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
 
 .img--small {
     height: 50px;

@@ -1,14 +1,13 @@
 /* COLORES */
 /* LETRAS */
 footer {
-  height: 500px;
   padding-top: 300px; }
 
 .footer__section {
-  background-color: #862a37;
-  text-align: left; }
+  background-color: #862a37; }
 
 .footer__redes {
+  display: grid;
   grid-template-areas: "instagram facebook twitter"; }
 
 .footer__instagram {
@@ -19,16 +18,6 @@ footer {
 
 .footer__twitter {
   grid-area: twitter; }
-
-.footer__icono {
-  width: 70px;
-  height: 70px;
-  margin: 12px; }
-
-.footer__texto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
 
 /* HEADER INDEX */
 .header {
@@ -76,30 +65,32 @@ footer {
 /* MIXING */
 /* MEDIA QUERIE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
+  .imgs {
+    width: auto; }
   footer {
     width: 100%;
-    height: 500px;
     padding-top: 300px; }
     footer .footer__redes {
       display: grid;
-      grid-template-areas: "instagram" "facebook"  "twitter"; } }
+      grid-template-areas: "instagram" "facebook"  "twitter"; }
+    footer .footer__instagram {
+      padding: 5px; }
+    footer .footer__facebook {
+      padding: 5px; }
+    footer .footer__twitter {
+      padding: 5px; } }
 
 * {
   margin: 0px;
   padding: 0px; }
 
 h1 {
-  font-family: "Itim", cursive; }
+  font-family: "Itim", cursive;
+  text-align: center; }
 
 h2 {
   color: #862a37;
   font-family: "Roboto", sans-serif; }
-
-body {
-  text-align: center;
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto; }
 
 .img--small {
   height: 50px;

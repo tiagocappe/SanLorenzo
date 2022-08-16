@@ -1,9 +1,10 @@
 /* MEDIA QUERIE CELULAR */
 @media (min-width:320px ) and (max-width:575px){
-
+    .imgs {
+        width: auto
+    }
     footer {
     width: 100%;
-    height: 500px;
     padding-top: 300px;
         .footer {
             &__redes {
@@ -11,7 +12,16 @@
                 grid-template-areas:"instagram"
                                     "facebook" 
                                     "twitter";
-    }
+        }
+            &__instagram {
+                padding: 5px;
+            }
+            &__facebook {
+                padding: 5px;
+            }
+            &__twitter {
+                padding: 5px;
+            }
     }
     }
 }
