@@ -112,3 +112,6 @@ main {
 
 .colortexto__rojo {
   color: red; }
+
+.center {
+  align-items: center; }
