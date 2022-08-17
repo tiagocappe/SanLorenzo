@@ -86,7 +86,8 @@ footer {
 
 h1 {
   font-family: "Itim", cursive;
-  text-align: center; }
+  text-align: center;
+  color: blue; }
 
 h2 {
   color: #862a37;
